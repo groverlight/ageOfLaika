@@ -13,7 +13,11 @@
 @property (strong, nonatomic) IBOutlet UITextField *humanYearsTextField;
 @property (strong, nonatomic) IBOutlet UILabel *humanAgeInDogYearsCalculationLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *laikaPic;
+@property (strong, nonatomic) IBOutlet UILabel *realHumanAgeInDogYearsCalculationLabel;
+
+
 - (IBAction)calcuateButton:(UIButton *)sender;
+- (IBAction)rightAge:(UIButton *)sender;
 
 @end
 

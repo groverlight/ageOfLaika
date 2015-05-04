@@ -19,10 +19,7 @@
 
     self.humanYearsTextField.keyboardType = UIKeyboardTypePhonePad;
 
-
-
 }
-
 
 
 - (IBAction)calcuateButton:(UIButton *)sender
@@ -30,27 +27,37 @@
 
 {
 
-    float numberOfHumanYears = [self.humanYearsTextField.text floatValue];
-    float numberInDogYears;
-
-    if (numberOfHumanYears >= 1 && numberOfHumanYears < 3)
-
-    {
-        numberInDogYears = numberOfHumanYears * 10.5;
-    }
-
-    else
-
-    {
-        numberInDogYears = (numberOfHumanYears - 2) * 4 + 21;
-
-    }
-
-    //int numberInDogYears = numberOfHumanYears * 7;
-   self.humanAgeInDogYearsCalculationLabel.text = [NSString stringWithFormat:@"%f", numberInDogYears];
+    int numberOfWrongHumanYears = [self.humanYearsTextField.text intValue];
+    int numberInDogYears = numberOfWrongHumanYears * 7;
+    self.humanAgeInDogYearsCalculationLabel.text = [NSString stringWithFormat:@"%i", numberInDogYears];
 
 
+}
 
+
+- (IBAction)rightAge:(UIButton *)sender
+
+{
+
+
+    float numberInRealHumanYears = [self.humanYearsTextField.text floatValue];
+    float numberInRealDogYears;
+
+
+        if (numberInRealHumanYears >= 1 && numberInRealHumanYears < 3)
+
+        {
+            numberInRealDogYears = numberInRealHumanYears * 10.5;
+        }
+
+        else
+
+        {
+            numberInRealDogYears = (numberInRealHumanYears - 2) * 4 + 21;
+
+        }
+
+       self.realHumanAgeInDogYearsCalculationLabel.text = [NSString stringWithFormat:@"%f", numberInRealDogYears];
 
 
 }
