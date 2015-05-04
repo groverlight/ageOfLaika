@@ -30,9 +30,24 @@
 
 {
 
-    int numberOfHumanYears = [self.humanYearsTextField.text intValue];
-    int numberInDogYears = numberOfHumanYears * 7;
-    self.humanAgeInDogYearsCalculationLabel.text = [NSString stringWithFormat:@"%i", numberInDogYears];
+    float numberOfHumanYears = [self.humanYearsTextField.text floatValue];
+    float numberInDogYears;
+
+    if (numberOfHumanYears >= 1 && numberOfHumanYears < 3)
+
+    {
+        numberInDogYears = numberOfHumanYears * 10.5;
+    }
+
+    else
+
+    {
+        numberInDogYears = (numberOfHumanYears - 2) * 4 + 21;
+
+    }
+
+    //int numberInDogYears = numberOfHumanYears * 7;
+   self.humanAgeInDogYearsCalculationLabel.text = [NSString stringWithFormat:@"%f", numberInDogYears];
 
 
 

@@ -57,7 +57,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="180" y="28" width="167" height="21"/>
+                                    <rect key="frame" x="175" y="28" width="167" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
