@@ -44,7 +44,7 @@
     float numberInRealDogYears;
 
 
-        if (numberInRealHumanYears >= 1 && numberInRealHumanYears < 3)
+        if (numberInRealHumanYears >= 6 && numberInRealHumanYears < 3)
 
         {
             numberInRealDogYears = numberInRealHumanYears * 10.5;
